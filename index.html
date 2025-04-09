@@ -4,83 +4,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Ayodele David (Gabimaru)</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css" type="text/css" media="all" />
-<body>
-  <h1>Created By Ayodele David ( Gabimaru) </h1><hr />
-<div class="header-container" style="background-color: #f8f9fa; border: 1px solid #d3d3d3; padding: 15px; border-radius: 5px; margin-bottom: 10px;">
-  <div class="header-section">
-    <h1>Welcome To The<br>Ayodele Website!</h1>
-    <div class="account-info">
-      <span class="email">ayodeledavid4206@gmail.com</span>
-    </div>
-    <div class="sharing-status">
-      <span class="icon">&#x2709;</span> <!-- Envelope icon -->
-      <span>Not shared</span>
-    </div>
-    <div class="draft-status">
-      <span class="icon">&#x2744;</span> <!-- Cloud Icon -->
-      <span>Draft saved</span>
-    </div>
-    <div class="required-indicator">
-      <span>* Indicates required question</span>
-    </div>
-  </div>
-</div> 
-<div class="form-field-container" style="background-color: #fff; border: 1px solid #d3d3d3; padding: 15px; border-radius: 5px; margin-bottom: 10px;">
-  <label for="name">Name *</label>
-  <input type="text" id="name" name="name" value=" " style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #d3d3d3; border-radius: 3px;">
-</div>
 
-<div class="form-field-container" style="background-color: #fff; border: 1px solid #d3d3d3; padding: 15px; border-radius: 5px; margin-bottom: 10px;">
-  <label for="email">Email address *</label>
-  <input type="email" id="email" name="email" value=" " style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #d3d3d3; border-radius: 3px;">
-</div>
-<div class="form-field-container">
-  <label for="location">Where's your location? *</label>
-<select id="location" name="location">
-  <option value="N/A">N/A</option>
-  <option value="Abia">Abia</option>
-  <option value="Adamawa">Adamawa</option>
-  <option value="Akwa Ibom">Akwa Ibom</option>
-  <option value="Anambra">Anambra</option>
-  <option value="Bauchi">Bauchi</option>
-  <option value="Bayelsa">Bayelsa</option>
-  <option value="Benue">Benue</option>
-  <option value="Borno">Borno</option>
-  <option value="Cross River">Cross River</option>
-  <option value="Delta">Delta</option>
-  <option value="Ebonyi">Ebonyi</option>
-  <option value="Edo">Edo</option>
-  <option value="Ekiti">Ekiti</option>
-  <option value="Enugu">Enugu</option>
-  <option value="Gombe">Gombe</option>
-  <option value="Imo">Imo</option>
-  <option value="Jigawa">Jigawa</option>
-  <option value="Kaduna">Kaduna</option>
-  <option value="Kano">Kano</option>
-  <option value="Katsina">Katsina</option>
-  <option value="Kebbi">Kebbi</option>
-  <option value="Kogi">Kogi</option>
-  <option value="Kwara">Kwara</option>
-  <option value="Lagos">Lagos</option>
-  <option value="Nasarawa">Nasarawa</option>
-  <option value="Niger">Niger</option>
-  <option value="Ogun">Ogun</option>
-  <option value="Ondo">Ondo</option>
-  <option value="Osun">Osun</option>
-  <option value="Oyo">Oyo</option>
-  <option value="Plateau">Plateau</option>
-  <option value="Rivers">Rivers</option>
-  <option value="Sokoto">Sokoto</option>
-  <option value="Taraba">Taraba</option>
-  <option value="Yobe">Yobe</option>
-  <option value="Zamfara">Zamfara</option>
-  <option value="FCT">Abuja (FCT)</option>
-</select>
-</div>
-<button type="submit"><a href="./index2.html" target=_blank title="Next Page">Next Page</a></button>
+<body>
+  <header>
+    <h1>Created By Ayodele David (Gabimaru)</h1>
+    <hr>
+  </header>
+
+  <div class="container">
+    <div class="header-container">
+      <div class="header-section">
+        <h1>Welcome To The<br>Ayodele Website!<tag>
+          <!--Tab to edit-->
+        </tag></h1>
+        <div class="account-info">
+          <span class="email">ayodeledavid4206@gmail.com</span>
+        </div>
+        <div class="status-item">
+          <span class="icon">&#x2709;</span> <!-- Envelope icon -->
+          <span>Not shared</span>
+        </div>
+        <div class="status-item">
+          <span class="icon">&#x2744;</span> <!-- Cloud Icon -->
+          <span>Draft saved</span>
+        </div>
+        <div class="required-indicator">
+          <span>* Indicates required question</span>
+        </div>
+      </div>
+    </div>
+
+    <form>
+      <div class="form-group">
+        <label for="name">Name *</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email address *</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="location">Where's your location? *</label>
+        <select id="location" name="location" required>
+          <option value="">Select Location</option>
+          <option value="N/A">N/A</option>
+          <option value="Abia">Abia</option>
+          <option value="Adamawa">Adamawa</option>
+          <option value="Akwa Ibom">Akwa Ibom</option>
+          <option value="Anambra">Anambra</option>
+          <option value="Bauchi">Bauchi</option>
+          <option value="Bayelsa">Bayelsa</option>
+          <option value="Benue">Benue</option>
+          <option value="Borno">Borno</option>
+          <option value="Cross River">Cross River</option>
+          <option value="Delta">Delta</option>
+          <option value="Ebonyi ">Ebonyi</option>
+          <option value="Edo">Edo</option>
+          <option value="Ekiti">Ekiti</option>
+          <option value="Enugu">Enugu</option>
+          <option value="Gombe">Gombe</option>
+          <option value="Imo">Imo</option>
+          <option value="Jigawa">Jigawa</option>
+          <option value="Kaduna">Kaduna</option>
+          <option value="Kano">Kano</option>
+          <option value="Katsina">Katsina</option>
+          <option value="Kebbi">Kebbi</option>
+          <option value="Kogi">Kogi</option>
+          <option value="Kwara">Kwara</option>
+          <option value="Lagos">Lagos</option>
+          <option value="Nasarawa">Nasarawa</option>
+          <option value="Niger">Niger</option>
+          <option value="Ogun">Ogun</option>
+          <option value="Ondo">Ondo</option>
+          <option value="Osun">Osun</option> 
+          <option value="Oyo">Oyo</option>
+          <option value="Plateau">Plateau</option>
+          <option value="Rivers">Rivers</option>
+          <option value="Sokoto">Sokoto</option>
+          <option value="Taraba">Taraba</option>
+          <option value="Yobe">Yobe</option>
+          <option value="Zamfara">Zamfara</option>
+          <option value="FCT">Abuja (FCT)</option>
+        </select>
+      </div>
+
+      <button type="submit"><a href="./index2.html" target="_blank" title="Next Page">Next Page</a></button>
+    </form>
+  </div>
 </body>
 
 </html>

@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif; /*Consider a more modern/stylish font like 'Open Sans', 'Roboto', or 'Lato'*/
+    background: linear-gradient(to bottom, #e6f0ff, #ffffff);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333; /*Consistent text color*/
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque */
+    padding: 30px; /*More padding*/
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /*Larger, softer shadow*/
+    width: 80%;
+    max-width: 900px; /* Increased max-width */
+    margin-bottom: 40px;
+    border-radius: 8px; /*Rounded corners*/
+}
+
+h1 {
+  color: #336699;
+  font-weight: 700; /*Bolder*/
+}
+
+
+#about {
+    background-color: #f8f9fa;
+    padding: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*Larger, softer shadow*/
+    width: 80%;
+    max-width: 900px; /* Increased max-width */
+}
+
+.about-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #ffffff;
+    /*Remove the animation - generally not suitable for formal styles*/
+}
+
+.about-content h2 {
+    color: #333;
+    margin-bottom: 15px; /*Reduce spacing*/
+    font-size: 2.2em; /*Slightly larger*/
+}
+
+
+.product {
+    width: 30%;
+    min-width: 280px; /*Slightly wider minimum*/
+    margin: 15px; /*More spacing*/
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1); /*Softer, larger shadow*/
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: transform 0.3s ease; /*Smoother transition*/
+}
+
+.product:hover {
+    transform: scale(1.03); /*Subtle zoom */
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.2); /*Slightly more prominent shadow on hover*/
+
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0; /*Matching rounded corners*/
+}
+
+
+/* Responsive adjustments (improved)*/
+@media (max-width: 1024px) { /* Added a breakpoint for tablets */
+    .product {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: 100%;
+        margin: 10px 0; /* Reduce side margin on mobile */
+    }
+    .about-photo{
+        width: 180px;
+        height: 180px;
+      }
+} 
+.stylish-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: lightgreen; /* Sharp */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 3D shadow */
+  transition: box-shadow 0.3s ease;
+  font-weight: bold;
+}
+
+.stylish-button:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /*Larger shadow on hover */
+}
